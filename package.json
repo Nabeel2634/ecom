@@ -1,0 +1,34 @@
+{
+  "name": "ecommerce-website",
+  "version": "1.0.0",
+  "description": "E-commerce website with Next.js frontend and Node.js backend",
+  "scripts": {
+    "install-all": "npm install && cd front-end && npm install && cd ../back-end && npm install",
+    "dev:frontend": "cd front-end && npm run dev",
+    "dev:backend": "cd back-end && npm start",
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build:frontend": "cd front-end && npm run build",
+    "start:frontend": "cd front-end && npm start",
+    "start:backend": "cd back-end && npm start",
+    "seed-admin": "cd back-end && npm run seed-admin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhammedrifadkp/ecommerce-website.git"
+  },
+  "keywords": [
+    "ecommerce",
+    "nextjs",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "Muhammed Rifad KP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muhammedrifadkp/ecommerce-website/issues"
+  },
+  "homepage": "https://github.com/muhammedrifadkp/ecommerce-website#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
